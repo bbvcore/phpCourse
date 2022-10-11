@@ -7,18 +7,22 @@
 <head>
     <title>Juego de preguntas</title>
     <style type="text/css">
-    *{
+*{
         padding:0;
         margin:0;
         box-sizing:border-box;
     }
     :root{
+        --white:#fff;
         --grey:#d3d3d3;
+        --dark-grey:#222;
+        --blue:#4286b4;
+        --sky-blue:#aaccdd;
     }
     body{
         font-family:Arial, Helvetica,"sans-serif";
         font-size:100%;
-        background:#f3f3f3;
+        background:var(--grey);
     }
     #wrapper{
         width:48rem;
@@ -27,7 +31,7 @@
         margin-top:5rem;
         box-shadow:0 0 5px #d3d3d3;
         border-radius:3px;
-        background:#fff;
+        background:var(--white);
     }
     #container{
         width:100%;
@@ -39,15 +43,15 @@
     }
     .btn{
         padding:.5rem 1rem .5rem 1rem;
-        background:#aaccdd;
-        color:#222;
+        background:var(--sky-blue);
+        color:var(--dark-grey);
         border:1px solid #333;
         border-radius:3px;
         float:right;
         margin-top:1rem;
     }
     .btn:hover{
-        background:#4286b4;
+        background:var(--blue);
         color:#fff;
         border:1px solid #333;
         border-radius:3px;
@@ -55,16 +59,15 @@
     .pagination{
         margin-top:.5rem;
     }
-    .pagination a:link{text-decoration:none;color:#222;}
-    .pagination a:visited{text-decoration:none;color:#222;}
-    .pagination a:hover{text-decoration:none;color:#4286b4;}
-    .pagination a:active{text-decoration:none;color:#222;}          
+    .pagination a:link{text-decoration:none;color:var(--dark-grey);}
+    .pagination a:visited{text-decoration:none;color:var(--dark-grey);}
+    .pagination a:hover{text-decoration:none;color:var(--blue);}
+    .pagination a:active{text-decoration:none;color:var(--dark-grey);}          
     .clear{
         clear:both;
         height:.5rem;
     }  
-    .next-link:link{text-decoration:none;margin:0 auto;}
-
+    .next-link:link{text-decoration:none;margin:0 auto;}    
     </style>
 </head>
 <body>
